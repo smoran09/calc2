@@ -23,3 +23,9 @@ class Calculator:
         """ divide two numbers and store the result"""
         self.result = value_a / value_b
         return self.result
+    try:
+        a = 5
+        b = 0
+        print(a / b)
+    except ZeroDivisionError:
+        print("Error dividing by zero")
