@@ -28,6 +28,10 @@ class Calculator:
         # -1 gets the last item added to the list automaticly and you can expect it to have the get result method
         return Calculator.history[-1].getResult()
     @staticmethod
+    def get_object_of_last_calculation_added_to_history():
+        # -1 gets the last item added to the list automaticly and you can expect it to have the get result method
+        return Calculator.history[-1].getResult()
+    @staticmethod
     def add_number(value_a, value_b):
         """ adds number to result"""
         #create an addition object using the factory we created on the calculation class

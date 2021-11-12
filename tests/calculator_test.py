@@ -18,6 +18,7 @@ def test_calculator_add(clear_history):
     assert Calculator.add_number(4, 2) == 6
     assert Calculator.history_count() == 4
     assert Calculator.get_result_of_last_calculation_added_to_history() == 6
+    assert Calculator.get_object_of_last_calculation_added_to_history() == 6
     pprint.pprint(Calculator.history)
 
 def test_clear_history(clear_history):
