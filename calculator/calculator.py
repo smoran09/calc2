@@ -25,18 +25,15 @@ class Calculator:
         return True
     @staticmethod
     def get_result_of_last_calculation_added_to_history():
-        # -1 gets the last item added to the list automaticly and you can expect it to have the get result method
         return Calculator.history[-1].getResult()
     @staticmethod
     def get_object_of_last_calculation_added_to_history():
-        # -1 gets the last item added to the list automaticly and you can expect it to have the get result method
         return Calculator.history[-1].getResult()
     @staticmethod
     def add_number(value_a, value_b):
         """ adds number to result"""
         #create an addition object using the factory we created on the calculation class
         addition = Addition.create(value_a,value_b)
-        # addition = Addition(value_a,value_b) <-this is not good but will work.  It will be repeated too much
         Calculator.add_calculation_to_history(addition)
         return Calculator.get_result_of_last_calculation_added_to_history()
     @staticmethod
@@ -45,7 +42,6 @@ class Calculator:
         """ subtract number from result"""
         # create an subtraction object using the factory we created on the calculation class
         subtraction = Subtraction.create(value_a, value_b)
-        # addition = Addition(value_a,value_b) <-this is not good but will work.  It will be repeated too much
         Calculator.add_calculation_to_history(subtraction)
         return Calculator.get_result_of_last_calculation_added_to_history()
     @staticmethod
