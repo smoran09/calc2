@@ -47,7 +47,6 @@ class Calculator:
     @staticmethod
     def multiply_numbers(value_a, value_b):
         """ multiply two numbers and store the result"""
-        #this is a shorthand way to create the multiplication object and added it the history in one line
         Calculator.add_calculation_to_history(Multiplication.create(value_a,value_b))
         return Calculator.get_result_of_last_calculation_added_to_history()
     @staticmethod
