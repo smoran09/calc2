@@ -5,5 +5,3 @@ pytest
 pycodestyle
 pytest-pylint
 pandas
-Flask
-uWSGI

@@ -34,6 +34,6 @@ def test_calculator_divide_static(clear_history_fixture):
     """Testing the subtract method of the calc"""
     # pylint: disable=unused-argument,redefined-outer-name
     #using Tuple instead of args because we can pack as much data as we need into the tuple
-    my_tuple = (4.0,2.0)
+    my_tuple = (8.0,2.0)
     Calculator.divide_numbers(my_tuple)
-    assert Calculator.get_result_value() == 2.0
+    assert Calculator.get_result_value() == 4.0
